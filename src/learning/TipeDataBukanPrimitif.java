@@ -4,32 +4,74 @@ public class TipeDataBukanPrimitif {
 
     public static void main(String[] args) {
 
-        Integer iniInteger = 100;
-        Byte iniByte = null;
-        Long iniLong = 1000L;
+        //tipe data bukan primitif
 
-        System.out.println(iniByte);
+        Byte iniByte = 100;
+        Short iniShort = 1000;
+        Integer iniInteger = 10000;
+        Long iniLong = 100000L;
 
-        iniByte = 100;
+        //konversi tipe data primitif ke Tipe Data Bukan Primitif
 
-        System.out.println(iniByte);
+        //byte
+        byte primitifByte;
+        primitifByte = iniByte.byteValue();
+        System.out.println(primitifByte);
 
-        //konversi tipe data primitif ke tipe data bukan primitif
+        primitifByte = iniShort.byteValue();
+        System.out.println(primitifByte);
 
-        int intPrimitif = 1000;
-        Integer intBukanPrimitif = intPrimitif;
+        primitifByte = iniInteger.byteValue();
+        System.out.println(primitifByte);
 
-        System.out.println(intBukanPrimitif);
+        primitifByte = iniLong.byteValue();
+        System.out.println(primitifByte);
 
-        //contoh 2 :
+        //short
+        short primitifShort;
+        primitifShort = iniShort.shortValue();
+        System.out.println(primitifShort);
 
-        Integer age = 23;
+        primitifShort = iniByte.shortValue();
+        System.out.println(primitifShort);
 
-        System.out.println(age);
+        primitifShort = iniInteger.shortValue();
+        System.out.println(primitifShort);
 
-        short age2 = age.shortValue();
+        primitifShort = iniLong.shortValue();
+        System.out.println(primitifShort);
 
-        System.out.println(age2);
+        //integer
+        int primitifInteger;
+        primitifInteger = iniInteger.intValue();
+        System.out.println(primitifInteger);
+
+        primitifInteger = iniByte.intValue();
+        System.out.println(primitifInteger);
+
+        primitifInteger = iniShort.intValue();
+        System.out.println(primitifInteger);
+
+        primitifInteger = iniLong.intValue();
+        System.out.println(primitifInteger);
+
+        //long
+        long primitifLong;
+        primitifLong = iniLong.longValue();
+        System.out.println(primitifLong);
+
+        primitifLong = iniByte.longValue();
+        System.out.println(primitifLong);
+
+        primitifLong = iniShort.longValue();
+        System.out.println(primitifLong);
+
+        primitifLong = iniInteger.longValue();
+        System.out.println(primitifLong);
+
+
+
+
 
     }
 }
