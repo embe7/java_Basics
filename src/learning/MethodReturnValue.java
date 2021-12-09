@@ -13,24 +13,30 @@ public class MethodReturnValue {
 
     public static void main(String[] args) {
 
-        var result1 = sum(100,100);
-        System.out.println(result1);
+        String name = "Suhendri ";
+        String npm = "18110460 ";
+        String kelas = "TI-M1803";
 
-        System.out.println(sum(200,200));
+        String dataDiri = DataDiri(name,npm,kelas);
+
+        System.out.println(dataDiri);
+
+        System.out.println(DataDiri("Gopi Putra ","18110445 " ,"TI-M1804 "));
 
         System.out.println(hitung(100,"+",100));
         System.out.println(hitung(200,"-",100));
     }
 
-    static int sum(int value1, int value2){
-     int total = value1 + value2;
-     return total;
+    static String DataDiri(String value1, String value2, String value3){
+        String dataLengkap = value1 + value2 + value3;
+        return dataLengkap;
     }
+
     static int hitung(int value1, String operasi, int value2){
         switch (operasi){
-            case "+":
+            case "+" :
                 return value1 + value2;
-            case "-":
+            case "-" :
                 return value1 - value2;
             default:
                 return 0;
