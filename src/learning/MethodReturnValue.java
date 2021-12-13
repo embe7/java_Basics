@@ -13,33 +13,41 @@ public class MethodReturnValue {
 
     public static void main(String[] args) {
 
-        String name = "Suhendri ";
-        String npm = "18110460 ";
-        String kelas = "TI-M1803";
+        var a = 100;
+        var b = 200;
+        var c = sum(a,b);
 
-        String dataDiri = DataDiri(name,npm,kelas);
+        var Nama = "Suhemdri ";
+        var NPM = 18110460;
+        var Kelas = " TI-M1803";
+        var DataDiri = data(Nama,NPM,Kelas);
 
-        System.out.println(dataDiri);
+        System.out.println(DataDiri);
+        System.out.println(c);
 
-        System.out.println(DataDiri("Gopi Putra ","18110445 " ,"TI-M1804 "));
+        System.out.println(penjumlahan(100,"-",50));
 
-        System.out.println(hitung(100,"+",100));
-        System.out.println(hitung(200,"-",100));
     }
 
-    static String DataDiri(String value1, String value2, String value3){
-        String dataLengkap = value1 + value2 + value3;
-        return dataLengkap;
+    static int sum(int bilA ,int bilB){
+        var total = bilA + bilB;
+        return total;
     }
 
-    static int hitung(int value1, String operasi, int value2){
+    static String data(String Nama, int Npm, String Kelas){
+        var DataLengkap = Nama + Npm + Kelas;
+        return DataLengkap;
+    }
+
+    static int penjumlahan(int bilA, String operasi, int bilB){
         switch (operasi){
-            case "+" :
-                return value1 + value2;
-            case "-" :
-                return value1 - value2;
+            case "+":
+                return bilA + bilB;
+            case "-":
+                return bilA - bilB;
             default:
                 return 0;
         }
     }
+
 }
