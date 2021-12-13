@@ -14,21 +14,10 @@ public class Method {
     public static void main(String[] args) {
 
         sayHello();
-        dataDiri();
+
     }
 
     static void sayHello(){
         System.out.println("Hello World");
-    }
-
-    static void dataDiri(){
-        String[] DataDiri = {
-                "Suhendri","18110460","TI-M1803"
-        };
-
-        for(var data : DataDiri){
-            System.out.println(data);
-        }
-
     }
 }
