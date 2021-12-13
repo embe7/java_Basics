@@ -11,13 +11,10 @@ public class MethodParameter {
 
     public static void main(String[] args) {
 
-        user("Suhendri","belajar Java");
-        user("Fahri Abizar","belajar Matematika");
-        user("Irvan Maulana","belajar Animasi");
+        data("Suhendri",18110460);
     }
 
-    static void user(String nama , String tujuan ){
-
-        System.out.println("hallo saya " + nama + " saya sedang " + tujuan);
+    static void data(String nama, int NPM){
+        System.out.println("Hay " + nama + " " + NPM);
     }
 }
