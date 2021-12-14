@@ -10,17 +10,15 @@ public class ifStatement {
 
     public static void main(String[] args) {
 
-        int nilai = 80;
-        int absen = 100;
+        int NilaiUjian = 80;
+        int NilaiAbsen = 75;
 
-        if (nilai >= 100 && absen >= 100){
-            System.out.println("Nilai Anda A");
-        }else if (nilai >= 80 && absen >= 80){
-            System.out.println("Nilai Anda B");
-        }else if (nilai >= 65 && absen >= 65){
-            System.out.println("Nilai Anda C");
-        }else {
-            System.out.println("Anda Tidak Lulus");
+        if (NilaiUjian >= 75 & NilaiAbsen >= 75){
+            System.out.println("Lulus");
+        }else if (NilaiUjian >=50 & NilaiAbsen >= 50){
+            System.out.println("Remedial");
+        }else{
+            System.out.println("Tidak Lulus");
         }
     }
 }

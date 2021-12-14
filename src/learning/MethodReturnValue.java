@@ -13,30 +13,14 @@ public class MethodReturnValue {
 
     public static void main(String[] args) {
 
-        var a = 100;
-        var b = 200;
-        var c = sum(a,b);
+        System.out.println(data("suhendri ",18110460," TI-M1803"));
 
-        var Nama = "Suhemdri ";
-        var NPM = 18110460;
-        var Kelas = " TI-M1803";
-        var DataDiri = data(Nama,NPM,Kelas);
-
-        System.out.println(DataDiri);
-        System.out.println(c);
-
-        System.out.println(penjumlahan(100,"-",50));
-
-    }
-
-    static int sum(int bilA ,int bilB){
-        var total = bilA + bilB;
-        return total;
+        System.out.println(penjumlahan(100,"+",100));
     }
 
     static String data(String Nama, int Npm, String Kelas){
-        var DataLengkap = Nama + Npm + Kelas;
-        return DataLengkap;
+        var DataDiri = Nama + Npm + Kelas;
+        return DataDiri;
     }
 
     static int penjumlahan(int bilA, String operasi, int bilB){
@@ -49,5 +33,4 @@ public class MethodReturnValue {
                 return 0;
         }
     }
-
 }
