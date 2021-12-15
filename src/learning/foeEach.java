@@ -11,22 +11,32 @@ public class foeEach {
 
         //Tanpa for each
 
-        String[] data = {
-                "Suhendri","18110460","TI-M1803"
-        };
+        String[] data = {"Suhendri","18110460","TI-M1803"};
 
-        for (int i = 0; i < data.length; i++){
+        for (int i = 0; i < data.length;i++){
             System.out.println(data[i]);
         }
 
-        //Menggunakan for each
+        //Menggunakan For Each
 
-        String[] data2 = {
-          "Suhendri","18110460","TI-M1803"
+        String[] data2 = {"Hendri","18110440","TI-M1803"};
+
+        for (String PrintData : data2){
+            System.out.println(PrintData);
+        }
+
+        //contoh for each studi kasus multi dimensi array
+
+        String[][] data3 = {
+                {"Suhendri","18110460","TI-M1803"},
+                {"Fahri Abizar","18110450","TI-M1803"},
+                {"Irvan","18110355","TI-M1803"}
         };
 
-        for (String printData : data2){
-            System.out.println(printData);
+        for (String[] PrintDataMD : data3){
+            for (int i = 0; i < PrintDataMD.length; i++){
+                System.out.println(PrintDataMD[i]);
+            }
         }
     }
 
