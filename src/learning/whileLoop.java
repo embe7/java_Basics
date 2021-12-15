@@ -15,6 +15,6 @@ public class whileLoop {
             System.out.println("Ini perulangan ke-" + angka);
             angka++;
         }
-        
+
     }
 }

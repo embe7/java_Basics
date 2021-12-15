@@ -12,11 +12,11 @@ public class doWhileLoop {
 
     public static void main(String[] args) {
 
-        var counter = 100;
+        int angka = 100;
 
         do {
-            System.out.println("perulangan ke-" + counter);
-            counter++;
-        }while (counter <=10);
+            System.out.println("Perulangan ke-"+ angka);
+            angka++;
+        }while (angka < 10);
     }
 }
