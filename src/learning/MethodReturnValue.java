@@ -13,22 +13,30 @@ public class MethodReturnValue {
 
     public static void main(String[] args) {
 
-        System.out.println(data("suhendri ",18110460," TI-M1803"));
+        dataDiri("Suhendri ",18110460, " TI-M1803");
 
-        System.out.println(penjumlahan(100,"+",100));
+        System.out.println(operasi(100,"*",10));
+
     }
 
-    static String data(String Nama, int Npm, String Kelas){
-        var DataDiri = Nama + Npm + Kelas;
-        return DataDiri;
+    static String dataDiri(String Nama, int Npm, String Kelas){
+        String data = Nama + Npm + Kelas;
+        System.out.println(data);
+        return data;
     }
 
-    static int penjumlahan(int bilA, String operasi, int bilB){
-        switch (operasi){
-            case "+":
-                return bilA + bilB;
+    static int operasi(int BilA , String Operasi, int BilB){
+        switch (Operasi){
+            case "+" :
+                return BilA + BilB;
             case "-":
-                return bilA - bilB;
+                return BilA - BilB;
+            case "*":
+                return  BilA * BilB;
+            case "/":
+                return BilA / BilB;
+            case "%":
+                return BilA % BilB;
             default:
                 return 0;
         }
