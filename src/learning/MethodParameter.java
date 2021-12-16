@@ -11,10 +11,11 @@ public class MethodParameter {
 
     public static void main(String[] args) {
 
-        data("Suhendri",18110460);
+        data("suhendri",18110460);
     }
 
-    static void data(String nama, int NPM){
-        System.out.println("Hay " + nama + " " + NPM);
+    static void data (String Nama, int Npm){
+        System.out.println("Selamat datang : " + Nama);
+        System.out.println("NPM : " + Npm);
     }
 }
