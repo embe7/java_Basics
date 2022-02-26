@@ -19,10 +19,16 @@ public class foeEach {
 
         //Menggunakan For Each
 
-        String[] data2 = {"Hendri","18110440","TI-M1803"};
+        String[][] data2 = {
+                {"Hendri","18110440","TI-M1803"},
+                {"fahri","18110440","TI-M1803"}
+        };
 
-        for (String PrintData : data2){
-            System.out.println(PrintData);
+        for (String[] PrintData : data2){
+            for (var i = 0; i < PrintData.length;i++){
+                System.out.println(PrintData[i]);
+            }
+
         }
 
         //contoh for each studi kasus multi dimensi array
